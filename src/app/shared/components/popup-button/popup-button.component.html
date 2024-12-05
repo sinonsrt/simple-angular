@@ -1,0 +1,9 @@
+<button (click)="openPopup()">Abrir Popup</button>
+
+<div *ngIf="showPopup" class="popup">
+  <div class="popup-content">
+    <p>Deseja salvar o valor no localStorage?</p>
+    <button (click)="saveToLocalStorage()">Salvar</button>
+    <button (click)="closePopup()">Cancelar</button>
+  </div>
+</div>
